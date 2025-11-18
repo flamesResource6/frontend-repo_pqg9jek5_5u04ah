@@ -1,9 +1,9 @@
 export default function FAQ(){
   const items = [
     {q:'How quickly can you visit?', a:'Most site visits can be scheduled within a few days. For urgent issues we do our best to come the same or next day.'},
-    {q:'Which brands do you work with?', a:'We are brand-agnostic and recommend systems that fit your needs and budget. We service most major manufacturers.'},
+    {q:'Which brands do you work with?', a:'We are brand‑agnostic and recommend systems that fit your needs and budget. We service most major manufacturers.'},
     {q:'Do you handle grants and paperwork?', a:'Yes, we guide you through available subsidies and provide the documentation needed.'},
-    {q:'How do I get a price?', a:'Send us a few details about your property and we will provide a clear, fixed-price quote whenever possible.'},
+    {q:'How do I get a price?', a:'Send us a few details about your property and we will provide a clear, fixed‑price quote whenever possible.'},
   ]
   return (
     <section className="py-12">
@@ -19,6 +19,11 @@ export default function FAQ(){
               <p className="mt-3 text-slate-600">{item.a}</p>
             </details>
           ))}
+        </div>
+
+        <div className="mt-8 rounded-xl border border-slate-200 bg-sky-50 p-5 text-slate-800">
+          <p className="font-medium">Still have questions?</p>
+          <p className="text-sm">We’re happy to help—send us a quick message and we’ll get back soon.</p>
         </div>
       </div>
     </section>

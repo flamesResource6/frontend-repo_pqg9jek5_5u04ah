@@ -4,7 +4,7 @@ export default function Contact(){
       <div className="max-w-5xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10">
         <div>
           <h1 className="text-3xl font-bold mb-4">Contact</h1>
-          <p className="text-slate-600 mb-6">Reach out for advice or a no-obligation quote. We usually reply the same day.</p>
+          <p className="text-slate-600 mb-6">Reach out for advice or a no‑obligation quote. We usually reply the same day.</p>
 
           <form onSubmit={(e)=> e.preventDefault()} className="space-y-4">
             <div className="grid sm:grid-cols-2 gap-4">
@@ -14,12 +14,12 @@ export default function Contact(){
             <input className="w-full rounded-xl border border-slate-200 p-3 focus:outline-none focus:ring-2 focus:ring-sky-200" placeholder="Phone" />
             <textarea rows="5" className="w-full rounded-xl border border-slate-200 p-3 focus:outline-none focus:ring-2 focus:ring-sky-200" placeholder="How can we help?" required />
             <button className="inline-flex items-center px-5 py-3 rounded-xl bg-sky-600 text-white hover:bg-sky-700 transition-colors shadow-sm">Send message</button>
+            <p className="text-xs text-slate-500">By sending this form you agree that we may contact you regarding your enquiry.</p>
           </form>
 
-          <div className="mt-8 text-sm text-slate-700">
-            <p><strong>Phone:</strong> +45 12 34 56 78</p>
-            <p><strong>Email:</strong> hello@horsens-energi.dk</p>
-            <p><strong>Address:</strong> Examplevej 1, 8700 Horsens</p>
+          <div className="mt-8 text-sm text-slate-700 grid sm:grid-cols-2 gap-4">
+            <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm"><p><strong>Phone:</strong> +45 12 34 56 78</p><p><strong>Email:</strong> hello@horsens-energi.dk</p></div>
+            <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm"><p><strong>Address:</strong> Examplevej 1</p><p>8700 Horsens</p></div>
           </div>
         </div>
 
